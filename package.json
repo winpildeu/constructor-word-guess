@@ -1,0 +1,28 @@
+{
+  "name": "constructor-word-guess",
+  "version": "1.0.0",
+  "description": "Word guess game built using JS constructor functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/winpildeu/constructor-word-guess.git"
+  },
+  "keywords": [
+    "word",
+    "guess",
+    "js",
+    "constructors"
+  ],
+  "author": "Winfield H",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/winpildeu/constructor-word-guess/issues"
+  },
+  "homepage": "https://github.com/winpildeu/constructor-word-guess#readme",
+  "dependencies": {
+    "inquirer": "^6.2.1"
+  }
+}
