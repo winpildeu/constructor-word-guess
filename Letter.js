@@ -21,4 +21,5 @@ function Letter (char) {
 // char.display();
 // char.check("w");
 
+// Create the Letter module
 module.exports = Letter;
