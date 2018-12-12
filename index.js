@@ -13,15 +13,12 @@ console.log(`Hidden word is: ${hiddenWord}`);
 
 // splits the hidden word and makes a word object
 let hiddenWordSplit = hiddenWord.split('');
-// console.log(`Split Array: ${hiddenWordSplit}`);
 
 // create the actual word object
 let word = new Word();
 hiddenWordSplit.forEach(element => {
     word.wordArray.push(new Letter(element));
 });
-// console.log(`wordArray: ${word.wordArray}`);
-
 
 // FUNCTIONS ================================================================
 function game() {
@@ -58,7 +55,6 @@ function game() {
 
                 // checks if every letter has been guessed correctly
                 let winCond = word.wordArray.every(elem => elem.guessed == true);
-                // console.log(winCond);
                 
                 // if all letters have been guessed or no remaining guesses, end game. else continue the game
                 (winCond) ? console.log(`YOU WIN!`) : (remainingGuess > 0) ? game() : console.log(`YOU LOSE...`)

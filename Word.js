@@ -31,15 +31,4 @@ function Word() {
     }
 }
 
-// test word
-// let hiddenWordSplit = ["r", "y", "u"];
-// let word = new Word();
-// hiddenWordSplit.forEach(element => {
-//     word.wordArray.push(new Letter(element));
-// });
-
-// word.displayWord();
-// word.checkWord("y");
-// word.displayWord();
-
 module.exports = Word;
