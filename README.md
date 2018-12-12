@@ -20,4 +20,5 @@ c. A method to check the user's input against the word array
 ## 4. wordBank.txt
 This file is the list of words that get imported into the app
 
+## Example:
 ![word guess image](./word-guess-constructors.gif)
