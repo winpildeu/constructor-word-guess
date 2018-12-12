@@ -9,7 +9,7 @@ const wordBank = fs.readFileSync("wordBank.txt", "utf8").split(',');
 
 // choose a random index in the word bank and set it to the hidden word
 let hiddenWord = wordBank[Math.floor(Math.random() * wordBank.length)];
-console.log(`Hidden word is: ${hiddenWord}`);
+// console.log(`Hidden word is: ${hiddenWord}`);
 
 // splits the hidden word and makes a word object
 let hiddenWordSplit = hiddenWord.split('');
@@ -36,7 +36,7 @@ function game() {
                     message: "Guess a letter (A-Z only)",
                     validate: function(value) {
                         // if the value is a letter, it passes the test
-                        var pass = value.match(/[A-z]/);
+                        var pass = value.match(/[A-z]| /);
                         if (pass) {
                           return true;
                         }
