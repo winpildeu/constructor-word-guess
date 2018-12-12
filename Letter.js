@@ -7,18 +7,27 @@ function Letter (char) {
     this.guessed = false;
     // func. that displays the real letter if guessed = true, shows '_' otherwise
     this.display = function() {
-        (this.guessed === true) ? this.letter : '_'
+        if (this.guessed === true) {
+            return this.letter;
+         } else {
+            return '_';
+         }
     },
     // takes in the user's guess and checks if it and the hidden letter match
     this.check = function(charGuess) {
-        (charGuess === this.letter) ? this.guessed = true : null
+        if (charGuess === this.letter) {
+            this.guessed = true;
+            console.log(`TRUE`);
+        } else {
+            console.log(`FALSE`)
+        }
     }
 }
 
 // object test
 // let char = new Letter("v");
 // console.log(char);
-// char.display();
+// console.log(char.display());
 // char.check("w");
 
 // Create the Letter module
