@@ -17,4 +17,7 @@ a. A word array containing letter objects
 b. A method to display the current shown/ hidden letters
 c. A method to check the user's input against the word array
 
+## 4. wordBank.txt
+This file is the list of words that get imported into the app
+
 ![word guess image](./word-guess-constructors.gif)
